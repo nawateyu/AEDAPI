@@ -14,6 +14,9 @@
 		870EE70519F7F8CA0062718F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870EE70419F7F8CA0062718F /* Images.xcassets */; };
 		870EE70819F7F8CA0062718F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870EE70619F7F8CA0062718F /* LaunchScreen.xib */; };
 		870EE71419F7F8CB0062718F /* AEDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870EE71319F7F8CB0062718F /* AEDTests.m */; };
+		87372CFF19F8839900D6AC89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87372CFE19F8839900D6AC89 /* UIKit.framework */; };
+		87372D0319F88A9F00D6AC89 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87372D0219F88A9F00D6AC89 /* CoreLocation.framework */; };
+		87FCC9D619FC324C008ACD75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FCC9D519FC324C008ACD75 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		870EE70D19F7F8CB0062718F /* AEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AEDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		870EE71219F7F8CB0062718F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		870EE71319F7F8CB0062718F /* AEDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEDTests.m; sourceTree = "<group>"; };
+		87372CFE19F8839900D6AC89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		87372D0219F88A9F00D6AC89 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		87FCC9D519FC324C008ACD75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FCC9D619FC324C008ACD75 /* QuartzCore.framework in Frameworks */,
+				87372D0319F88A9F00D6AC89 /* CoreLocation.framework in Frameworks */,
+				87372CFF19F8839900D6AC89 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,9 @@
 		870EE6EB19F7F8CA0062718F = {
 			isa = PBXGroup;
 			children = (
+				87FCC9D519FC324C008ACD75 /* QuartzCore.framework */,
+				87372D0219F88A9F00D6AC89 /* CoreLocation.framework */,
+				87372CFE19F8839900D6AC89 /* UIKit.framework */,
 				870EE6F619F7F8CA0062718F /* AED */,
 				870EE71019F7F8CB0062718F /* AEDTests */,
 				870EE6F519F7F8CA0062718F /* Products */,
@@ -168,6 +180,7 @@
 				TargetAttributes = {
 					870EE6F319F7F8CA0062718F = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = Z79AM3Z6RT;
 					};
 					870EE70C19F7F8CB0062718F = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -343,7 +356,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AED/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +368,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AED/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +429,7 @@
 				870EE71919F7F8CB0062718F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		870EE71A19F7F8CB0062718F /* Build configuration list for PBXNativeTarget "AEDTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +438,7 @@
 				870EE71C19F7F8CB0062718F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
